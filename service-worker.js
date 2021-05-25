@@ -5,11 +5,7 @@ var urlsToCache = [
   '/css/style.css',
   '/fabrications.html',
   '/components.html',
-  '/extrusion.html',
-  '/rollForm.html',
-  '/tubing.html',
-  'js/products.js',
-  'js/fabrications.js',
+  '/extrusion.html'
 ];
 
 self.addEventListener('install', function(event) {
