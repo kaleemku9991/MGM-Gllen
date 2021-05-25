@@ -9,7 +9,7 @@ var urlsToCache = [
   'rollForm.html',
   'tubing.html',
   'js/products.js',
-  'js/fabrications.js'
+  'js/fabrication.js'
 ];
 
 self.addEventListener('install', function(event) {
