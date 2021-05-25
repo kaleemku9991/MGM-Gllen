@@ -1,15 +1,15 @@
-var CACHE_NAME = 'my-site-cache-v1ad';
+var CACHE_NAME = 'my-site-cache-v1ad1';
 var urlsToCache = [
   './',
-  '.js/main.js',
+  './js/main.js',
   './css/style.css',
   './fabrications.html',
   './components.html',
   './extrusion.html',
   './rollForm.html',
   './tubing.html',
-  '.js/products.js',
-  '.js/fabrication.js'
+  './js/products.js',
+  './js/fabrication.js'
 ];
 
 self.addEventListener('install', function(event) {
