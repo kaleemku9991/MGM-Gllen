@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/0e62a5467e.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>MGM</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <!-- navbar -->
+  <div class="container">
+    <nav class="main-nav" id="navbar">
+      <div class="navbar">
+        <img class="logo" id="logo1" alt="MGM-logo" src="img/107_MMG_Logo.png">
+        <i class="fas fa-bars fa-2x hamburger"></i>
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#aboutUS">About us</a></li>
+          <li class="dropdown">
+            <div class="dropbtn">
+              <a href="#product">Products</a>
+              <div class="product-dot"></div>
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="tubing.html" target="_blank">Tubing</a>
+              <a href="fabrications.html" target="_blank">Fabrication</a>
+              <a href="extrusion.html" target="_blank">Extrusion</a>
+              <a href="rollForm.html" target="_blank">Roll form</a>
+              <a href="components.html" target="_blank">Components</a>
+            </div>
+          </li>
+          <li class="contact_li"><a href="index.html#contact">Contact us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="product" class="product-pages">
+      <div class="product-heading">
+        <h2>Our Products</h2>
+        <img class="about-logo" alt="MGM-logo" src="img/107_MMG_Logo.png">
+      </div>
+      <div class="product-gallery">
+        <div class="product-gallery-large">
+          <div id="imgGallary">
+            <img alt="tubing-pic" src="img/tubing/096_shutterstock_690054409.jpg" class="product-slide fade">
+            <img alt="ERW-pic" src="img/tubing/093_shutterstock_1280435110.jpg" class="product-slide fade"
+              style="display: none;">
+            <img alt="hydraulic-pic" src="img/tubing/072_iStock-1152603004.jpg" class="product-slide fade"
+              style="display: none;">
+            <img alt="services-pic" src="img/tubing/097_iStock-1189631286.jpg" class="product-slide fade services"
+              style="display: none;">
+            <img alt="services-pic" src="img/tubing/071_iStock-1152603123.jpg" class="product-slide fade services"
+              style="display: none;">
+            <img alt="services-pic" src="img/tubing/054_shutterstock_1688293900.jpg" class="product-slide fade services"
+              style="display: none;">
+            <img alt="services-pic" src="img/tubing/075_shutterstock_1208327758.jpg" class="product-slide fade services"
+              style="display: none;">
+            <img alt="services-pic" src="img/tubing/048_AdobeStock_212447011.jpeg" class="product-slide fade services"
+              style="display: none;">
+          </div>
+
+          <div class="points" id="product-points">
+            <div class="points-div" id="product-point-divs" onclick="currentSlideProduct(1)">
+              <div class="main-point" id="product-main-point"></div>
+            </div>
+            <div class="points-div" id="product-point-divs" onclick="currentSlideProduct(2)">
+              <div class="main-point" id="product-main-point"></div>
+            </div>
+            <div class="points-div" id="product-point-divs" onclick="currentSlideProduct(3)">
+              <div class="main-point" id="product-main-point"></div>
+            </div>
+            <div class="points-div" id="product-point-divs" onclick="currentSlideProduct(4)">
+              <div class="main-point" id="product-main-point"></div>
+            </div>
+            <div class="points-div" id="product-point-divs" onclick="currentSlideProduct(5)">
+              <div class="main-point" id="product-main-point"></div>
+            </div>
+            <div class="points-div" id="product-point-divs" onclick="currentSlideProduct(6)">
+              <div class="main-point" id="product-main-point"></div>
+            </div>
+            <div class="points-div" id="product-point-divs" onclick="currentSlideProduct(7)">
+              <div class="main-point" id="product-main-point"></div>
+            </div>
+            <div class="points-div" id="product-point-divs" onclick="currentSlideProduct(8)">
+              <div class="main-point" id="product-main-point"></div>
+            </div>
+          </div>
+          <p class="tubing">Tubing</p>
+        </div>
+        <div class="product-gallery-small">
+          <div class="pic-1">
+            <img src="./img/ERW.jpg" alt="ERW and DOM">
+            <p>ERW & DOM</p>
+          </div>
+          <div class="pic-2">
+            <img src="./img/hydraulic.jpeg" alt="hydraulic">
+            <p>Hydraulic</p>
+          </div>
+          <div class="pic-3">
+            <img src="./img/stainless.jpg" alt="stainless">
+            <p>Stainless</p>
+          </div>
+          <div class="pic-4">
+            <img src="./img/services.jpg" alt="services">
+            <p>Services</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- footer -->
+  <footer class="container">
+    <div class="footer-links">
+      <a>Resources</a>
+      <a>Privacy and Legal</a>
+      <a>FAQ</a>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright &copy; MCCLURE METALS GROUP 2021
+      </p>
+    </div>
+    <div>
+    </div>
+    <div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+
+
+</body>
+
+</html>
