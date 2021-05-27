@@ -42,13 +42,23 @@ hamburger.addEventListener("click", () => {
 
 });
 window.onclick = function (event) {
-  if (!event.target.matches('.nav-links') && !event.target.matches('.hamburger') && !event.target.matches('.dropdown')) {
+  if (!event.target.matches('.nav-links') && !event.target.matches('.hamburger') && !event.target.matches('.dropbtn a')) {
     navLinks.classList.remove("open");
     hamburger.style.display = "block"
       links.forEach(link => {
         link.classList.remove("fade");
       });
   };
+    if (event.target.matches('.dropdown') ) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.style.display="none";
+        }
+      }
+    }
 };
 
 
