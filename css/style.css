@@ -809,6 +809,7 @@ footer{
 #imgGallary-roll img {
   max-height: 240px;
 }
+.dropdown:hover .dropdown-content {display: none;}
 }
 @media only screen and (max-width: 580px) {
   .navbar {

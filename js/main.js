@@ -19,7 +19,7 @@ window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "15px 0px";
+    document.getElementById("navbar").style.padding = "3px 0px";
     document.getElementById("logo1").style.width = "100px";
   } else {
     document.getElementById("navbar").style.padding = "30px 0px";
@@ -95,3 +95,26 @@ function currentSlide(n) {
   myTimer = setInterval(function () { plusSlides(n + 1) }, 4000);
   showSlides(slideIndex = n);
 }
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.resize(function(){
+  var wid = window.width();
+  if(wid < 768){
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  }
+});
