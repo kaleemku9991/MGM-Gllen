@@ -698,6 +698,7 @@ footer{
     pointer-events: none;
     right:-100%;
     top: -10px;
+    margin-right: -5px;
   }
   .nav-links.open {
     pointer-events: all;
@@ -728,6 +729,7 @@ footer{
   .nav-links li a:hover {
     font-size:30px;
   }
+
   .dropdown-content a {
     line-height: 5vh !important;
     color: black;
