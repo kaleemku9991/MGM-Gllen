@@ -42,7 +42,7 @@ hamburger.addEventListener("click", () => {
 
 });
 window.onclick = function (event) {
-  if (!event.target.matches('.nav-links') && !event.target.matches('.hamburger')) {
+  if (!event.target.matches('.nav-links') && !event.target.matches('.hamburger') && !event.target.matches('.dropdown')) {
     navLinks.classList.remove("open");
     hamburger.style.display = "block"
       links.forEach(link => {
@@ -102,24 +102,3 @@ function currentSlide(n) {
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-
-// window.resize(function(){
-//   var wid = window.width();
-//   if(wid < 768){
-    
-//     // Close the dropdown menu if the user clicks outside of it
-//     window.onclick = function(event) {
-//       if (!event.target.matches('.dropbtn')) {
-//         var dropdowns = document.getElementsByClassName("dropdown-content");
-//         var i;
-//         for (i = 0; i < dropdowns.length; i++) {
-//           var openDropdown = dropdowns[i];
-//           if (openDropdown.classList.contains('show')) {
-//             openDropdown.classList.remove('show');
-//           }
-//         }
-//       }
-//     }
- 
-//   }
-// });
