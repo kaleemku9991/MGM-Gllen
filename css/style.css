@@ -638,7 +638,6 @@ footer{
   .dropbtn{
     background-color: #a40331;
     color: black !important;
-    /* padding: 0 26px; */
     margin: 0 auto;
     font-size: 20px;
     font-weight: 700;
@@ -658,11 +657,13 @@ footer{
     z-index: 1;
     border-radius: 5px;
     overflow: hidden;
+    display: none;
   }
   .dropdown-content a:hover{
     background-color: #6b112b;
     font-size: 25px !important;
   }
+  .show {display:block;}
   .product-dot{
     display: none;
   }
@@ -699,7 +700,7 @@ footer{
     pointer-events: none;
     right:-100%;
     top: -10px;
-    margin-right: 0px !important;
+    margin-right: -5px !important;
   }
   .nav-links.open {
     pointer-events: all;
@@ -812,8 +813,6 @@ footer{
 }
 }
 @media only screen and (max-width: 580px) {
- .dropdown-content {display: none;}
-  .show {display:block;}
   .navbar {
     padding: 0;
     margin: 0;
