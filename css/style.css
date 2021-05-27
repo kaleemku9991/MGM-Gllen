@@ -422,6 +422,7 @@ footer{
   color: #a40331;
   transition: color 1s ease;  
 }
+.show {display:none;}
 
 /* product page styling */
 .product-pages{
@@ -809,9 +810,10 @@ footer{
 #imgGallary-roll img {
   max-height: 240px;
 }
-.dropdown:hover .dropdown-content {display: none;}
 }
 @media only screen and (max-width: 580px) {
+  .dropdown:hover .dropdown-content {display: none !important;}
+  .show {display:block;}
   .navbar {
     padding: 0;
     margin: 0;

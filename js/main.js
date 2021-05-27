@@ -99,6 +99,10 @@ function currentSlide(n) {
 //   document.getElementById("myDropdown").classList.toggle("show");
 // }
 
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
 // window.resize(function(){
 //   var wid = window.width();
 //   if(wid < 768){
@@ -116,5 +120,6 @@ function currentSlide(n) {
 //         }
 //       }
 //     }
+ 
 //   }
 // });
