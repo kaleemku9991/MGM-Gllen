@@ -28,7 +28,7 @@ ul li{
   width: 100%;
   max-width: 1300px;
   z-index: 99;
-  padding:30px 0;
+  padding:15px 0;
   transition: 0.4s;
 }
 .navbar{
@@ -54,8 +54,13 @@ ul li{
 .contact_li{
   margin: 0;
 }
-.navbar img{
+/* .navbar img{
   width: 150px;
+} */
+.navbar h2{
+  font-size: 30px;
+  padding: 20px 0;
+  color: #a40331;
 }
 .product-dot{
   height: 8px;
@@ -70,7 +75,7 @@ ul li{
   background: url("../img/home.jpeg") no-repeat center center/cover;
   height: 850px;
   padding: 250px 0;
-  margin-top: 160px;
+  margin-top: 120px;
 }
 .home-sub-main{
   background: rgba(40, 40, 41, 0.75);
@@ -145,13 +150,18 @@ ul li{
 }
 .product-gallery-large p{
   font-size: 20px;
+  font-weight: 700;
+  font-size: 22px;
+}
+.product-gallery-large p a{
+  color: #ffffff !important;
 }
 .hide-h3{
   display: none;
 }
 .product-gallery-large h3{
   font-size: 30px;
-  margin-top: 50px  ;
+  margin-top: 90px  ;
 }
 .product-gallery-small {
   display: grid;
@@ -280,7 +290,6 @@ ul li a:active{
   transition: 0.3s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  background-color: black;
   margin-left: 10px;
 }
 
@@ -296,7 +305,7 @@ ul li a:active{
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: #a40331;
+ color: black;
 }
 /* contact styling */
 #contact{
@@ -513,7 +522,7 @@ footer{
     margin: 25px 0 10px 0;
   }
   .product-gallery-large h3{
-    margin-top: 5px;
+    display: none;
   }
   .product-gallery-large img{
     width: 700px;
@@ -557,6 +566,12 @@ footer{
 .nav-links {
   margin-right: 10px;
 }
+.product-gallery-large .hide-h3{
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+ }
 }
  @media only screen and (max-width: 1024px) {
 
@@ -616,11 +631,6 @@ footer{
    display: none;
  }
  .product-gallery-large p {
-  font-weight: 700;
- }
- .product-gallery-large .hide-h3{
-  display: block;
-  font-size: 30px;
   font-weight: 700;
  }
  .tubing{
@@ -973,4 +983,7 @@ footer{
  #aboutUS {
   margin: 30px auto 0px auto;
  }
+ .navbar h2{
+  font-size: 20px;
+}
 }

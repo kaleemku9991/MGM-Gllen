@@ -19,11 +19,11 @@ window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "3px 0px";
-    document.getElementById("logo1").style.width = "100px";
+    document.getElementById("navbar").style.padding = "3px 10px";
+    // document.getElementById("logo1").style.width = "100px";
   } else {
-    document.getElementById("navbar").style.padding = "30px 0px";
-    document.getElementById("logo1").style.width = "150px";
+    document.getElementById("navbar").style.padding = "20px 10px";
+    // document.getElementById("logo1").style.width = "150px";
   }
 }
 
