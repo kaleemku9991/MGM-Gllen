@@ -175,7 +175,8 @@ ul li{
 }
 .product-gallery-small a{
   color: #ffffff;
-  display: inline-block;
+  /* display: inline-block; */
+  width: 150px;
 }
 .product-gallery-small a:hover{
   color: #6b112b !important;
@@ -199,9 +200,9 @@ ul li{
   height: 235px;
 }
 .rl-p{
-  margin-top: -17px !important;
+  /* margin-top: -17px !important; */
   cursor: pointer !important;
-  width: 150px;
+  /* width: 150px; */
 }
 .rl-p:hover{
   color: #6b112b !important;
