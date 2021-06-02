@@ -54,9 +54,9 @@ ul li{
 .contact_li{
   margin: 0;
 }
-/* .navbar img{
+.navbar img{
   width: 150px;
-} */
+}
 .navbar h2{
   font-size: 30px;
   padding: 20px 0;
@@ -612,11 +612,12 @@ footer{
   border-bottom: 1px solid #ffffff;
   width: 1200px;
   font-size: 18px;
+  font-family: 'Montserrat', sans-serif !important;
 }
 .form-line-1 textarea::-webkit-input-placeholder {
   font-size: 18px;
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
   height: 40px;
 }
 .form-line-1 input[type='checkbox']{
