@@ -96,3 +96,6 @@ function currentSlide(n) {
   myTimer = setInterval(function () { plusSlides(n + 1) }, 4000);
   showSlides(slideIndex = n);
 }
+
+//input event listner
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="cache-control" content="private">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/0e62a5467e.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>MGM</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <div class="container">
+    <nav class="main-nav" id="navbar">
+      <div class="navbar">
+        <!-- <img class="logo" id="logo1" alt="MGM-logo" src="img/107_MMG_Logo.png"> -->
+        <h2 class="logo" id="logo1" alt="MGM-logo">McClure Metals Group</h2>
+        <i class="fas fa-bars fa-2x hamburger"></i>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutUS">About us</a></li>
+          <li class="dropdown">
+            <div class="dropbtn">
+              <a href="#product">Products</a>
+              <div class="product-dot"></div>
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="tubing.html" target="_blank">Tubing</a>
+              <a href="fabrications.html" target="_blank">Fabrications</a>
+              <a href="extrusion.html" target="_blank">Extrusions</a>
+              <a href="rollForm.html" target="_blank">Roll Forms</a>
+              <a href="components.html" target="_blank">Components</a>
+            </div>
+          </li>
+          <li class="contact_li"><a href="#contact">Contact us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- contact us -->
+  <section id="inquiry" class="container">
+    <div class="inquiry-main">
+      <form class="inquiry-form" method="post">
+        <div class="form-line-1">
+          <div class="i-l">
+            <input type="text" name="fname" required>
+            <label>First Name</label>
+          </div>
+          <div class="lastName i-l">
+            <input type="text" name="lname" required>
+            <label>Last Name</label>
+          </div>
+          <div class="i-l">
+            <input type="text" name="title" required>
+            <label>Title</label>
+          </div>
+        </div>
+        <div class="form-line-1">
+          <div class="i-l">
+            <input type="text" name="email" required>
+            <label>Email</label>
+          </div>
+          <div class="telephone i-l">
+            <input type="text" name="phone" required>
+            <label>Telephone</label>
+          </div>
+          <div class="i-l">
+            <input type="text" name="company" required>
+            <label>Company</label>
+          </div>
+        </div>
+        <div class="form-line-1 csz">
+          <div id="addres" class="i-l">
+            <input type="address" name="address" required>
+            <label>Address</label>
+          </div>
+          <div id="city" class="i-l">
+            <input type="text" name="city" required>
+            <label>City</label>
+          </div>
+          <div id="st" class="i-l">
+            <input type="text" name="street" required>
+            <label>St</label>
+          </div>
+          <div id="zip" class="i-l">
+            <input type="text" name="zip" required>
+            <label>ZIP</label>
+          </div>
+        </div>
+        <div class="form-line-1 check-main">
+          <label class="interest">Interest Area</label>
+          <div class="checkbox">
+            <input type="checkbox" name="tubing" id="check-tube">
+            <label>Tubing</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="fabrication">
+            <label>Fabrications</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="component">
+            <label>Components</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="extrusion">
+            <label>Extrusions</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="rollform">
+            <label>Roll Forms</label>
+          </div>
+        </div>
+        <div class="form-line-1 text-area">
+          <textarea placeholder="Comment" name="comment"></textarea>
+        </div>
+        <div class="form-line-1 files">
+          <label for="file-input">Attach Files</label>
+          <div class="image-upload">
+            <label for="file-input">
+              <i class="fa fa-paperclip" aria-hidden="true"></i>
+            </label>
+            <input id="file-input" type="file" name="file" />
+          </div>
+          <button type="submit">Submit</button>
+        </div>
+
+      </form>
+    </div>
+    <div class="contact-links inquiry-contact-links">
+      <div class="home-a-links">
+        <a href="tubing.html">Tubing</a>
+        <a href="fabrications.html">Fabrications</a>
+        <a href="extrusion.html">Extrusions</a>
+        <a href="rollForm.html">Roll Forms</a>
+        <a href="components.html">Engineered Components</a>
+        <a href="#contact">One Point of Contact</a>
+      </div>
+    </div>
+
+  </section>
+  <!-- footer -->
+  <footer class="container">
+    <div class="footer-links">
+      <a>Resources</a>
+      <a>Privacy and Legal</a>
+      <a>FAQ</a>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright &copy; MCCLURE METALS GROUP 2021
+      </p>
+    </div>
+    <div>
+    </div>
+    <div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

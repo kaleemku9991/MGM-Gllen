@@ -524,13 +524,160 @@ footer{
   height: 403px;
 }
 
+/* inquiry form css */
+#inquiry{
+  background: url("../img/contact.jpeg") no-repeat center center/cover;
+  height: 920px;
+  margin-top: 115px;
+}
+.inquiry-main{
+  height: 800px;
+  background: rgba(40, 40, 41, 0.60);
+  max-width: 1300px;
+  color: #ffffff;
+  justify-content: space-around;
+}
+.inquiry-form{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 20px auto;
+  max-width:1200px ;
+}
+
+.form-line-1{
+  display: flex;
+  margin-top: 70px;
+  align-items: center;
+  position: relative;
+}
+.form-line-1 .i-l{
+  border-bottom: 1px solid #ffffff;
+  position: relative;
+  height: 34px;
+}
+.i-l label {
+  position: absolute;
+  pointer-events: none;
+  left: 2px;
+  top: 0px;
+  font-size: 18px !important;
+  transition: 0.2s ease all;
+}
+.i-l input{
+  height: 35px;
+}
+.i-l input:focus ~ label,
+.i-l input:not(:focus):valid ~ label{
+  top: -20px;
+  left: 0px;
+  font-size: 11px !important;
+}
+
+.form-line-1 input{
+  color: #ffffff;
+  background: transparent;
+  border: 0;
+  outline: none;
+  width: 365px;
+  font-size: 20px;
+}
+.form-line-1 input::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+#st input,#zip input,#city input{
+  width: 100px;
+}
+#st{
+  margin:0 20px;
+}
+.lastName{
+  margin: 0 50px;
+}
+#addres input{
+  width: 790px;
+}
+#addres{
+  margin-right: 55px;
+}
+.telephone{
+  margin: 0 55px;
+}
+.form-line-1 textarea{
+  color: #ffffff !important;
+  background: transparent;
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+  width: 1200px;
+  font-size: 18px;
+}
+.form-line-1 textarea::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  height: 40px;
+}
+.form-line-1 input[type='checkbox']{
+  color: #ffffff !important;
+  background: transparent;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  width: 25px;
+}
+.checkbox{
+  margin: 0 0px 0 90px;
+  border: none !important;
+}
+#check-tube{
+margin: 0;
+}
+.form-line-1 button{
+  display: inline-block;
+  color: #ffffff !important;
+  cursor: pointer;
+  background: transparent;
+  width: 130px;
+  font-size: 18px;
+  border-radius: 5px;
+  height: 35px;
+  margin-left: 50px;
+  border: 1px solid #ffffff;
+
+}
+.form-line-1 button:hover{
+  background-color: #a40331;
+  transition: background-color 0.4s ease;
+}
+.form-line-1 i{
+  cursor: pointer;
+  margin: 0 5px;
+}
+.form-line-1 i:hover{
+  color: #6b112b;
+}
+.image-upload{
+  border: none !important;
+}
+.image-upload > input
+{
+  display: none;
+}
+.image-upload i
+{
+  cursor: pointer;
+}
+
+.inquiry-contact-links{
+  margin-top: 0 !important;
+}
+
 /* responsivness */
 @media only screen and (max-width: 1280px) {
   .container{
-    padding: 0 10px;
-  }
-  #navbar{
-    margin: 0 -15px;
+    margin: 0 5px;
   }
   .navbar img{
     margin: 0 5px;
@@ -595,6 +742,33 @@ footer{
   font-weight: 700;
   text-align: center;
  }
+ /* inquiry css */
+
+ #inquiry { 
+  padding:0px !important;
+  }
+  .inquiry-main{
+    padding:  0 10px;
+  }
+  .form-line-1 input {
+    width: 310px;
+  }
+  #addres input{
+  width: 640px;
+  }
+ .telephone {
+  margin: 0 52px;
+ }
+ 
+ .checkbox {
+  margin: 0 0px 0 60px;
+ }
+ .inquiry-form{
+  align-items: center;
+ }
+ .form-line-1 textarea {
+  width: 1020px;
+}
 }
  @media only screen and (max-width: 1024px) {
 
@@ -661,10 +835,41 @@ footer{
 }
  #product-points {
   left: 0%;
-
  }
+   /* inquiry css */
+
+   #inquiry { 
+    padding:0px !important;
+    }
+    .inquiry-main{
+      padding:  0 10px;
+    }
+    .form-line-1 input {
+      width: 220px;
+      font-size: 18px;
+    }
+    #addres input{
+    width: 360px;
+    }
+   .telephone {
+    margin: 0 52px;
+   }
+   
+   .checkbox {
+    margin: 0 0px 0 17px;
+   }
+   .inquiry-form{
+    align-items: center;
+   }
+   .form-line-1 textarea {
+    width: 755px;
+  }
+
 }  
 @media only screen and (max-width: 986px) {
+  #navbar{
+    margin: 0 -10px;
+  }
   .navbar img{
     width: 100px;
   }
@@ -718,6 +923,7 @@ footer{
     transform: translate(-5%, -50%);
     z-index: 99999;
     opacity: 1;
+    padding-right: 5px;
   }
   .nav-links li a:hover {
     color: #ffffff;
@@ -843,6 +1049,77 @@ footer{
 }
 #imgGallary-roll img {
   max-height: 240px;
+}
+/* inquiry css */
+.checkbox{
+  margin: 0 0px 0 20px;
+}
+.form-line-1 {
+  flex-direction: column;
+  margin-top: 10px;
+}
+.form-line-1 label {
+  font-size: 12px;
+}
+ #inquiry { 
+ padding:0px !important;
+ height: 870px;
+ }
+ .inquiry-form{
+   padding:0 15px;
+   align-items: center;
+ }
+ .inquiry-main{
+   height: 750px;
+ }
+.form-line-1 input{
+  width: 320px;
+  font-size: 14px;
+}
+#addres input {
+  width: 320px;
+}
+.form-line-1 input:nth-child(2) {
+  margin: 0 0px;
+}
+.files{
+  flex-direction: row;
+  align-items: center;
+}
+.form-line-1 textarea {
+  width: 600px ;
+}
+.i-l input:focus ~ label,
+.i-l input:not(:focus):valid ~ label{
+  top: -5px;
+}
+.i-l label {
+  font-size: 18px !important;
+  top: 10px;
+}
+.i-l{
+  margin-top: 15px;
+}
+#addres{
+  margin-right: 0px;
+  width: 320px;
+}
+.check-main{
+  align-items: baseline;
+}
+.form-line-1 textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  height: 20px;
+}
+.text-area{
+  height: 30px;
+}
+
+#st input,#zip input,#city input{
+  width: 320px;
+}
+#st {
+  margin: 10px 0px;
 }
 }
 @media only screen and (max-width: 580px) {
@@ -1009,4 +1286,26 @@ footer{
  .navbar h2{
   font-size: 20px;
 }
+/* inquiry css */
+ #inquiry { 
+ padding:0px !important;
+ height: 750px;
+ }
+ .inquiry-form{
+   padding:0 15px
+ }
+ .inquiry-main{
+   height: 700px;
+ }
+.form-line-1 textarea {
+  width: 320px ;
+}
+.i-l label {
+  font-size: 14px !important;
+  top: 15px;
+}
+.i-l{
+  margin-top: 10px;
+}
+
 }
