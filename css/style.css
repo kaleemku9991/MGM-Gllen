@@ -1056,10 +1056,14 @@ margin: 0;
 }
 .form-line-1 {
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 1px;
 }
 .form-line-1 label {
   font-size: 12px;
+}
+
+.files {
+  margin-top: 15px;
 }
  #inquiry { 
  padding:0px !important;
@@ -1105,7 +1109,9 @@ margin: 0;
   width: 320px;
 }
 .check-main{
-  align-items: baseline;
+  width: 315px;
+  margin: 15px 0;
+  align-items: flex-start;
 }
 .form-line-1 textarea::-webkit-input-placeholder {
   font-size: 14px;
@@ -1119,7 +1125,7 @@ margin: 0;
   width: 320px;
 }
 #st {
-  margin: 10px 0px;
+  margin-top: 10px;
 }
 }
 @media only screen and (max-width: 580px) {
