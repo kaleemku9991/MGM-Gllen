@@ -332,7 +332,7 @@ ul li a:active{
 }
 /* contact styling */
 #contact{
-  background: url("../img/contact.jpeg") no-repeat center center/cover;
+  background: url("../img/home.jpeg") no-repeat center center/cover;
   height: 910px;
   padding-top: 200px;
   display: flex;
@@ -602,7 +602,7 @@ footer{
   margin-right: 55px;
 }
 .telephone{
-  margin: 0 55px;
+  margin: 0 50px;
 }
 .form-line-1 textarea{
   color: #ffffff !important;
