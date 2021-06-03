@@ -21,27 +21,25 @@
     <nav class="main-nav" id="navbar">
       <div class="navbar">
         <!-- <img class="logo" id="logo1" alt="MGM-logo" src="img/107_MMG_Logo.png"> -->
-        <a href="index.html">
-          <img class="logo" id="logo1" alt="MGM-logo" src="img/107_MMG_Logo.png">
-          </a>
+        <h2 class="logo" id="logo1" alt="MGM-logo">McClure Metals Group</h2>
         <i class="fas fa-bars fa-2x hamburger"></i>
         <ul class="nav-links">
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="index.html#aboutUS">About us</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutUS">About us</a></li>
           <li class="dropdown">
             <div class="dropbtn">
               <a href="#product">Products</a>
               <div class="product-dot"></div>
             </div>
             <div id="myDropdown" class="dropdown-content">
-              <a href="tubing.html">Tubing</a>
-              <a href="fabrications.html">Fabrications</a>
-              <a href="extrusion.html">Extrusions</a>
-              <a href="rollForm.html">Roll Forms</a>
-              <a href="components.html">Components</a>
+              <a href="tubing.html" target="_blank">Tubing</a>
+              <a href="fabrications.html" target="_blank">Fabrications</a>
+              <a href="extrusion.html" target="_blank">Extrusions</a>
+              <a href="rollForm.html" target="_blank">Roll Forms</a>
+              <a href="components.html" target="_blank">Components</a>
             </div>
           </li>
-          <li class="contact_li"><a href="index.html#contact">Contact us</a></li>
+          <li class="contact_li"><a href="#contact">Contact us</a></li>
         </ul>
       </div>
     </nav>
@@ -99,23 +97,23 @@
         <div class="form-line-1 check-main">
           <label class="interest">Interest Area</label>
           <div class="checkbox">
-            <input type="checkbox" name="tubing" id="check-tube">
+            <input type="checkbox" name="check[]" id="check-tube">
             <label>Tubing</label>
           </div>
           <div class="checkbox">
-            <input type="checkbox" name="fabrication">
+            <input type="checkbox" name="check[]">
             <label>Fabrications</label>
           </div>
           <div class="checkbox">
-            <input type="checkbox" name="component">
+            <input type="checkbox" name="check[]">
             <label>Components</label>
           </div>
           <div class="checkbox">
-            <input type="checkbox" name="extrusion">
+            <input type="checkbox" name="check[]">
             <label>Extrusions</label>
           </div>
           <div class="checkbox">
-            <input type="checkbox" name="rollform">
+            <input type="checkbox" name="check[]">
             <label>Roll Forms</label>
           </div>
         </div>
@@ -164,7 +162,11 @@
     <div>
     </div>
   </footer>
-
+  <script type="text/javascript">
+    if(window.history.replaceState){
+      window.history.replaceState(null, null, window.location.href);
+    }
+    </script>
   <script src="js/main.js"></script>
 
 </body>
