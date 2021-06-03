@@ -1,5 +1,6 @@
 var CACHE_NAME = 'v2';
 var urlsToCache = [
+  'index.html',
   '/css/style.css'
 ];
 
